@@ -1,2 +1,3 @@
 venv/
-.gitigore
+.*
+__pycache__/
