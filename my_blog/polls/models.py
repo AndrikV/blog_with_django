@@ -9,7 +9,6 @@ class Polls(models.Model):
 
 
 class Choices(models.Model):
-    poll = models.ForeignKey(Polls)
+    poll = models.ForeignKey(Polls, on_delete=models.CASCADE)
     name = models.CharField(max_length=256)
     author_info = models.CharField(max_length=256, null=True)
-    
