@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block page_content %}
+  <div style="display: flex; justify-content: center; margin-top: 10px;">
+    {% for image in images %}
+      {# separate app or even service #}
+      <img src="http://localhost:8000/posts/{{image.post_pk}}/{{image.media_name}}/" style="max-width: 80%;">
+    {% endfor %}
+  </div>
+{% endblock %}

@@ -1,2 +1,5 @@
 venv/
-.gitigore
+.*
+__pycache__/
+db.sqlite3
+dev.html
