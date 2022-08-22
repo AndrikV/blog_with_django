@@ -13,6 +13,7 @@
   {# comments #}
   <section style="background-color: #ccc; padding: 10px;">
     <h1 style="text-align: center; margin: 0;">Comments</h1>
+    <a href={% url 'posts:new_comment' object.pk %}>Add new comment</a>
     {% for comment in comments %}
       <div style="margin-bottom: 10px; background-color: #aaa; margin-top: 10px; padding: 10px; font-weight: 100;">
         <div style="display: flex; justify-content: space-between;" >

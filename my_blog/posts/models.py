@@ -13,7 +13,8 @@ class Posts(models.Model):
 
 class PostsMedia(models.Model):
     post = models.ForeignKey(Posts, on_delete=models.CASCADE)
-    media_path = models.FileField(upload_to='posts_media')
+    media_name = models.CharField(max_length=256)
+    media_file = models.FileField(upload_to='posts_media')
 
 
 class PostsAssessments(models.Model):
