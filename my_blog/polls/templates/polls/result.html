@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block page_content %}
+  <ul>
+    {% for choice, val in choices_results %}
+      <li>{{choice}}: {{val}}%</li>
+    {% endfor %}
+  </ul>
+{% endblock %}

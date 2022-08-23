@@ -11,7 +11,7 @@
 <body>
   <nav style="display: flex; justify-content: space-around; padding: 10px; background-color: #00FF00;">
     <a href={% url 'posts:index' %}>Posts</a>
-    <a href="#">Polls</a>
+    <a href={% url 'polls:index' %}>Polls</a>
     <a href="#">Events</a>
   </nav>
   {% block page_content %}{% endblock %}
