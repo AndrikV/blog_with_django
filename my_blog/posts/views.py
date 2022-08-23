@@ -1,4 +1,5 @@
 import os
+
 from django.views import generic, View
 from django.db.models import Avg
 from django.http import (
