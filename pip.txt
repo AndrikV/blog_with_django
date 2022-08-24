@@ -1,1 +1,5 @@
-pip install django python-dotenv
+python-dotenv
+django
+django-debug-toolbar
+
+pip install django python-dotenv django-debug-toolbar
